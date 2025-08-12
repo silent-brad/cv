@@ -22,7 +22,7 @@
 #resume_section("Summary")
 
 #summary_item(
-  [_Full-stack programmer based out of *Richmond, VA* with 2 and 1/2 years of professional software development experience and over a decade of experience writing/building web apps. Seeking a junior to mid level software engineering role._]
+  [_Full-stack programmer with 2 and 1/2 years of professional software development experience and over a decade of experience writing/building web apps. Seeking a junior to mid level software engineering role near *Richmond, VA* or remote._]
 )
 
 #resume_section("Skills")
