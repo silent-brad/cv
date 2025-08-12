@@ -281,7 +281,7 @@
   resume_item[#content]
   
   set text(size: 12pt, style: "normal", weight: "light")
-  items.map(icon => devicon(icon.at(0), icon.at(1))).join(", ")
+  items.map(icon => strong[#icon]).join(", ")
 }
 
 #let skill_item(category, items) = {
@@ -297,7 +297,7 @@
       ],
       align(left)[
         #set text(size: 12pt, style: "normal", weight: "light")
-        #items.map(icon => devicon(icon.at(0), icon.at(1))).join(", ")
+        #items.map(icon => strong[#icon]).join(", ")
       ],
     )
   ]
