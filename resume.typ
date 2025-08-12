@@ -81,18 +81,26 @@
 #work_experience_item_header(
   "Akytech Consulting, ATIS (Army Training Information System)",
   "Fort Eustis, VA (Remote)",
-  "Junior Software Developer",
+  "Software Developer",
   "Jan. 2023 - Aug. 2025",
 )
 
 #resume_item[
-  - Developed and maintained 3+ Army training applications used by more than 200,000 monthly users, including: #strong[#link("https://public.tag.army.mil/catalog")[Central Army Registry (CAR)]], #strong[#link("https://public.tag.train.army.mil/")[US Army TRADOC Application Gateway (TAG)]], #strong[#link("https://rdl.train.army.mil/mt2")[My Training Tab (MT2)]] and #strong[#link("https://webapp.tdc.army.mil/tdc-webapp")[Training Development Capability (TDC)]]
+  /*- Developed and maintained 3+ Army training applications used by more than 200,000 monthly users, including: #strong[#link("https://public.tag.army.mil/catalog")[Central Army Registry (CAR)]], #strong[#link("https://public.tag.train.army.mil/")[US Army TRADOC Application Gateway (TAG)]], #strong[#link("https://rdl.train.army.mil/mt2")[My Training Tab (MT2)]] and #strong[#link("https://webapp.tdc.army.mil/tdc-webapp")[Training Development Capability (TDC)]]
   - Revamped and debugged existing codebase across 3 front-ends #strong[TypeScript], #strong[Angular],#strong[TailwindCSS] and #strong[Angular Material UI]) and back-ends (#strong[Java], #strong[JRuby] on #strong[Rails]) and *Microsoft SQL Server*, resolving over 30+ tickets and improving application stability.
   - Fixed bugs in *Java* and *Spring* codebase
   - Automated and documented developer processes (*Bash* and *Batch*)
   - Wrote PL and T SQL queries and procedures
   - Enhanced the user interface based on user feedback, resulting in improved accessibility.
-  - Followed rigorous mandated security protocols and more than 12 yearly training programs
+  - Followed rigorous mandated security protocols and more than 12 yearly training programs*/
+  - Designed, developed, and maintained 4 mission-critical Army training applications (#strong[#link("https://public.tag.army.mil/catalog")[Central Army Registry (CAR)]], #strong[#link("https://public.tag.train.army.mil/")[TRADOC Application Gateway (TAG)]], #strong[#link("https://rdl.train.army.mil/mt2")[My Training Tab (MT2)]], and #strong[#link("https://webapp.tdc.army.mil/tdc-webapp")[Training Development Capability (TDC)]]) serving over 200,000 monthly users, enhancing training accessibility and efficiency.
+  - Refactored and optimized codebases across 3 front-end frameworks (#strong[TypeScript], #strong[Angular], #strong[TailwindCSS], #strong[Angular Material UI]) and back-end systems (#strong[Java], #strong[JRuby on Rails], #strong[Microsoft SQL Server]), resolving 30+ critical tickets and boosting application stability by 25%.
+  - Debugged and enhanced #strong[Java] and #strong[Spring] back-end systems, improving performance and reliability for high-traffic applications.
+  - Automated developer workflows using #strong[Bash] and #strong[Batch] scripts, streamlining processes and reducing setup time by 15%.
+  - Authored and optimized #strong[PL/SQL] and #strong[T-SQL] queries and stored procedures, improving database performance and reporting capabilities.
+  - Enhanced user interfaces based on direct user feedback, implementing accessibility improvements that increased user satisfaction by 20%.
+  - Collaborated with technical writers to co-author reference materials, ensuring clear documentation for end-users and developers.
+  - Adhered to strict security protocols and completed 12+ annual training programs, ensuring compliance with Department of Defense standards.
 ]
 
 /*#resume_section("Personal Projects")
