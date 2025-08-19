@@ -43,7 +43,7 @@
   )
   
   set text(
-    font: ("Apple Garamond"),
+//    font: ("Apple Garamond"),
     lang: "en",
     size: 11pt,
     fill: color_darknight,
