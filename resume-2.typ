@@ -96,6 +96,18 @@
   - Adhered to strict security protocols and completed 12+ annual training programs, ensuring compliance with Department of Defense standards.
 ]
 
+#work_experience_item_header(
+  "Amazon, RIC9",
+  "Ashland, VA",
+  "Fulfillment Associate",
+  "Oct. 2020 - Jan. 2023",
+)
+
+#resume_item[
+  - Provided support for team members who process returns, with a focus on teamwork excellence
+  - Drove forklift in warehouse to unload trucks, move boxes from conveyor belts, scan and take totes from belts and wrap for shipment
+]
+
 /*#resume_section("Personal Projects")
 
 #personal_project_item_header(
