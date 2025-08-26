@@ -56,7 +56,7 @@
   )
   
   // set paragraph spacing
-  //show par: set block(above: 0.75em, below: 0.75em)
+  show par: set block(above: 0.75em, below: 0.75em)
   set par(justify: true)
 
   set heading(
@@ -143,7 +143,7 @@
   align(left)[
     #smallcaps[#title]
     //#box(fill: accent, width: 1fr, line(length: 100%))
-    #box(width: 1fr, height: 0.5pt)
+    #box(fill: color_darknight, width: 1fr, height: 0.5pt)
   ]
 }
 
@@ -261,7 +261,8 @@
     #justify_align[
       #resume_position[
         //#git_icon
-        #box[#link("https://github.com/" + git)[#git]]
+        //#box[#link("https://github.com/" + git)[#git]]
+        #box[#link("https://" + git)[#git]]
       ]
     ][
       #resume_time[#start_time]

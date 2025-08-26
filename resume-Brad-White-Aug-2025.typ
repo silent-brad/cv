@@ -104,7 +104,7 @@
 #personal_project_item_header(
   "BTNX (A BitTorrent Client written in Elixir)",
   "https://torrent.knightoffaith.systems",
-  "silent-brad/btnx",
+  "github.com/silent-brad/btnx",
   "Aug. 2025",
   [
     - Wrote Bencoder
@@ -116,7 +116,7 @@
 #personal_project_item_header(
   "Basecamper (A Basecamp like Project Management App)",
   "https://basecamper.knightoffaith.systems",
-  "silent-brad/btnx",
+  "github.com/silent-brad/btnx",
   "Aug. 2025",
   [
     - Neumorphic design..
