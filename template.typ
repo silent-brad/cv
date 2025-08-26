@@ -2,7 +2,7 @@
 #let color_darknight = rgb("#131A28")
 #let color_darkgray = rgb("333333")
 
-#let accent = oklch(38%, 0.1523, 18.62deg)
+//#let accent = oklch(38%, 0.1523, 18.62deg)
 
 // layout utility
 #let justify_align(left_body, right_body) = {
@@ -68,7 +68,7 @@
     align(center)[
       #pad(bottom: 5pt)[
         #block[
-          #set text(size: 25pt, style: "normal", fill: accent)
+          #set text(size: 25pt, style: "normal")
           #text[#author.firstname]
           #text[#author.lastname]
         ]
@@ -95,31 +95,31 @@
     set box(height: 11pt)
     set text(size: 11pt)
 
-    let linkedin_icon = box(image("assets/icons/linkedin.svg"))
-    let portfolio_icon = box(image("assets/icons/link.svg"))
-    let git_icon = box(image("assets/icons/square-github.svg"))
+    //let linkedin_icon = box(image("assets/icons/linkedin.svg"))
+    //let portfolio_icon = box(image("assets/icons/link.svg"))
+    //let git_icon = box(image("assets/icons/square-github.svg"))
     //let git_icon = box(image("assets/icons/devicons/git.svg"))
-    let email_icon = box(image("assets/icons/square-envelope-solid.svg"))
-    let phone_icon = box(image("assets/icons/square-phone-solid.svg"))
+    //let email_icon = box(image("assets/icons/square-envelope-solid.svg"))
+    //let phone_icon = box(image("assets/icons/square-phone-solid.svg"))
     let separator = box(width: 5pt)
     
     align(center)[
       #block[
         #align(horizon)[
-          #phone_icon
+          //#phone_icon
           #box[#text(author.phone)]
           #separator
-          #email_icon
+          //#email_icon
           #box[#link("mailto:" + author.email)[#author.email]]
           #separator
-          #git_icon
+          /*#git_icon
           #box[#link("https://github.com/" + author.github)[#author.github]]
           #separator
           #linkedin_icon
-          #box[
+          box[
             #link("https://www.linkedin.com/in/" + author.linkedin)[#author.linkedin]
-          ]
-          #portfolio_icon
+          ]*/
+          //#portfolio_icon
           #box[
             #link("https://" + author.portfolio)[#author.portfolio]
           ]
@@ -134,23 +134,16 @@
   body
 }
 
-#let devicon(url, text) = {
-  set box(height: 10pt)
-  [#box(image("assets/icons/devicons/" + url + ".svg")) #strong[#text]]
-}
-
-
 // general style
 #let resume_section(title) = {
   set text(
     size: 16pt,
     weight: "thin",
-    fill: accent,
   )
   align(left)[
     #smallcaps[#title]
     //#box(fill: accent, width: 1fr, line(length: 100%))
-    #box(fill: accent, width: 1fr, height: 0.5pt)
+    #box(width: 1fr, height: 0.5pt)
   ]
 }
 
@@ -248,30 +241,26 @@
   site,
   git,
   start_time,
-  items,
   content
 ) = {
   set block(above: 0.7em, below: 0.7em)
   set pad(top: 5pt)
   set box(height: 10pt)
-  let portfolio_icon = box(image("assets/icons/link.svg"))
   //let git_icon = box(image("assets/icons/square-github.svg"))
-  let git_icon = box(image("assets/icons/devicons/git.svg"))
   
   pad[
     #justify_align[
       #resume_organization[#name]
     ][
       #resume_location[
-        #portfolio_icon
         #box[
-          #link(site)[#site]
+          #text(11pt)[#link(site)[#site]]
         ]
       ]
     ]
     #justify_align[
       #resume_position[
-        #git_icon
+        //#git_icon
         #box[#link("https://github.com/" + git)[#git]]
       ]
     ][
@@ -279,9 +268,6 @@
     ]
   ]
   resume_item[#content]
-  
-  set text(size: 12pt, style: "normal", weight: "light")
-  items.map(icon => strong[#icon]).join(", ")
 }
 
 #let skill_item(category, items) = {
@@ -290,14 +276,14 @@
   
   pad[
     #grid(
-      columns: (20fr, 80fr),
+      columns: (25fr, 75fr),
       gutter: 10pt,
       align(right)[
         #resume_category[#category]
       ],
       align(left)[
         #set text(size: 12pt, style: "normal", weight: "light")
-        #items.map(icon => strong[#icon]).join(", ")
+        #items.map(icon => icon).join(", ")
       ],
     )
   ]

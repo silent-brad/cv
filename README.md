@@ -4,4 +4,4 @@
 Need `typst` CLI installed.
 Run `typst watch resume.typ` to build pdf.
 
-For dev icons, I used [Skill Icons](https://skillicons.dev/).
+<!--For dev icons, I used [Skill Icons](https://skillicons.dev/).-->
