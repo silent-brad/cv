@@ -2,7 +2,7 @@
 #let color_darknight = rgb("#131A28")
 #let color_darkgray = rgb("333333")
 
-//#let accent = oklch(38%, 0.1523, 18.62deg)
+#let accent = oklch(38%, 0.1523, 18.62deg)
 
 // layout utility
 #let justify_align(left_body, right_body) = {
@@ -56,7 +56,7 @@
   )
   
   // set paragraph spacing
-  show par: set block(above: 0.75em, below: 0.75em)
+  //show par: set block(above: 0.75em, below: 0.75em)
   set par(justify: true)
 
   set heading(
@@ -68,7 +68,7 @@
     align(center)[
       #pad(bottom: 5pt)[
         #block[
-          #set text(size: 25pt, style: "normal")
+          #set text(size: 25pt, style: "normal", fill: accent)
           #text[#author.firstname]
           #text[#author.lastname]
         ]
@@ -101,6 +101,8 @@
     //let git_icon = box(image("assets/icons/devicons/git.svg"))
     //let email_icon = box(image("assets/icons/square-envelope-solid.svg"))
     //let phone_icon = box(image("assets/icons/square-phone-solid.svg"))
+
+    //let separator = [ #strong[●] ]
     let separator = box(width: 5pt)
     
     align(center)[
@@ -139,11 +141,12 @@
   set text(
     size: 16pt,
     weight: "thin",
+    fill: accent,
   )
   align(left)[
     #smallcaps[#title]
-    //#box(fill: accent, width: 1fr, line(length: 100%))
-    #box(fill: color_darknight, width: 1fr, height: 0.5pt)
+    #box(fill: accent, width: 1fr, height: 0.5pt)
+    //#box(fill: color_darknight, width: 1fr, height: 0.5pt)
   ]
 }
 

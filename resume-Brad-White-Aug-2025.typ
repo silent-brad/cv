@@ -37,22 +37,22 @@
     "Java",
     "Golang",
     "Ruby",
-    "Nix",
     "Shell/Bash",
+    "Nix",
   )
 )
 
 #skill_item(
   [Frameworks and Tools],
   (
-    "Tailwind CSS",
     "Angular",
+    "Tailwind CSS",
     "React",
+    "Spring Boot",
     "Ruby on Rails",
-    "Spring",
     "Git",
     "Docker",
-    "NGINX"
+    "Caddy"
   )
 )
 
@@ -77,14 +77,14 @@
 
 #resume_item[
   - Designed, developed, and maintained 4 mission-critical Army training applications (#strong[#link("https://public.tag.army.mil/catalog")[Central Army Registry (CAR)]], #strong[#link("https://public.tag.army.mil/")[TRADOC Application Gateway (TAG)]], #strong[#link("https://rdl.train.army.mil/mt2")[My Training Tab (MT2)]], and #strong[#link("https://webapp.tdc.army.mil/tdc-webapp")[Training Development Capability (TDC)]]) serving over 200,000 monthly users, enhancing training accessibility and efficiency.
-  - Refactored and optimized codebases across 3 front-end frameworks (TypeScript, Angular, TailwindCSS, Angular Material UI) and back-end systems (Java, JRuby, Ruby on Rails, Microsoft SQL Server), resolving 30+ critical tickets and boosting application stability.
+  - Refactored and optimized codebases across 3 front-end frameworks (TypeScript, Angular, TailwindCSS, Angular Material UI) and back-end systems (Java, JRuby, Ruby on Rails, Microsoft SQL Server).//, resolving 30+ critical tickets and boosting application stability.
   - Debugged and enhanced Java and Spring back-end systems, improving performance and reliability for high-traffic applications.
   - Automated developer workflows using Bash and Batch scripts, streamlining processes and reducing setup time.
   - Authored and optimized PL/SQL and T-SQL queries and stored procedures, improving database performance and reporting capabilities.
   - Enhanced user interfaces based on user feedback, implementing accessibility improvements which resulted in increased user satisfaction.
   - Collaborated to co-author reference materials, ensuring clear documentation for end-users and developers.
   - Adhered to strict security protocols and completed 12+ annual training programs, ensuring compliance with Department of Defense standards.
-  - #strong[Technologies:] TypeScript, Angular, Tailwind CSS, Java, Spring, JRuby, Ruby on Rails, Microsoft SQL Server, Tomcat, Bash, Azure Cloud
+  - #strong[Technologies:] TypeScript, Angular, Tailwind CSS, Java, Spring, JRuby, Ruby on Rails, Microsoft SQL Server, Bash, Tomcat, GraphQL, Azure Cloud
 ]
 
 /*#work_experience_item_header(
@@ -102,26 +102,25 @@
 #resume_section("Personal Projects")
 
 #personal_project_item_header(
-  "BTNX (A BitTorrent Client written in Elixir)",
-  "https://torrent.knightoffaith.systems",
-  "github.com/silent-brad/btnx",
-  "Aug. 2025",
+  "A Book Sharing App",
+  "https://bookshelves.knightoffaith.systems",
+  "github.com/silent-brad/bookshelves",
+  "Sep. 2025",
   [
-    - Wrote Bencoder
-    - ..
-    - #strong[Technologies:] Elixir, Phoenix, Tailwind CSS, SQLite, Fly.io, Nix
+    - Made backend, frontend, reverse proxy, UI, devops infra.
+    - #strong[Technologies:] TypeScript, Java, Angular, Spring Boot, Tailwind CSS, Caddy, Docker, Nix
   ]
 )
 
 #personal_project_item_header(
-  "Basecamper (A Basecamp like Project Management App)",
-  "https://basecamper.knightoffaith.systems",
-  "github.com/silent-brad/btnx",
+  "Bittorrent Client Implementation in Go",
+  "",
+  "github.com/silent-brad/bt",
   "Aug. 2025",
   [
-    - Neumorphic design..
+    - Wrote Bencoder, ..
     - ..
-    - #strong[Technologies:] Ruby, Ruby on Rails, Tailwind CSS, Alpine.js, SQLite, Fly.io, Nix
+    - #strong[Technologies:] Golang, Nix
   ]
 )
 
