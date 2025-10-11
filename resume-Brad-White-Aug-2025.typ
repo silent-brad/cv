@@ -103,7 +103,7 @@
 
 #personal_project_item_header(
   "Epos Programming Language",
-  "",
+  //"",
   "github.com/silent-brad/epos-lang",
   "Oct. 2025",
   [
@@ -114,18 +114,19 @@
 
 #personal_project_item_header(
   "A Book Sharing App",
-  "https://bookshelves.knightoffaith.systems",
+  //"https://bookshelves.knightoffaith.systems",
   "github.com/silent-brad/bookshelves",
   "Sep. 2025",
   [
-    - Developed, designed and deployed frontend UI, backend rest API, reverse proxy, devops infrastructure, and database for a book sharing app.
+    //- Developed, designed and deployed frontend UI, backend rest API, reverse proxy, devops infrastructure, and database for a book sharing app.
+    - Developed, designed and deployed frontend, backend API, reverse proxy, devops infrastructure, and database for a book sharing app.
     - #strong[Technologies:] TypeScript, Java, Angular, Spring Boot, Tailwind CSS, Caddy, Docker, Nix
   ]
 )
 
 #personal_project_item_header(
   "Bittorrent Client Implementation in Go",
-  "",
+  //"",
   "github.com/silent-brad/bt",
   "Aug. 2025",
   [

@@ -68,7 +68,7 @@
     align(center)[
       #pad(bottom: 5pt)[
         #block[
-          #set text(size: 25pt, style: "normal", fill: accent)
+          #set text(size: 28pt, style: "normal", fill: accent)
           #text[#author.firstname]
           #text[#author.lastname]
         ]
@@ -78,7 +78,7 @@
 
   let positions = {
     set text(
-      size: 9pt,
+      size: 10pt,
       weight: "regular",
       ligatures: false,
     )
@@ -115,7 +115,7 @@
           #box[#link("mailto:" + author.email)[#author.email]]
           #separator
           //#git_icon
-          #box[#link("https://github.com/" + author.github)[GitHub: #author.github]]
+          #box[#link("https://github.com/" + author.github)[github: #author.github]]
           #separator
           /*#linkedin_icon
           box[
@@ -241,7 +241,7 @@
 
 #let personal_project_item_header(
   name,
-  site,
+  //site,
   git,
   start_time,
   content
@@ -254,22 +254,25 @@
   pad[
     #justify_align[
       #resume_organization[#name]
+      #h(0.3cm) (#link("https://" + git)[#git])
     ][
       #resume_location[
-        #box[
+        /*#box[
           #text(11pt)[#link(site)[#site]]
-        ]
+        ]*/
+        #resume_time[#start_time]
       ]
     ]
-    #justify_align[
+    /*#justify_align[
       #resume_position[
         //#git_icon
         //#box[#link("https://github.com/" + git)[#git]]
-        #box[#link("https://" + git)[#git]]
+        
+        //#box[#link("https://" + git)[#git]]
       ]
     ][
-      #resume_time[#start_time]
-    ]
+      //#resume_time[#start_time]
+    ]*/
   ]
   resume_item[#content]
 }
