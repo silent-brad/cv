@@ -114,10 +114,10 @@
           //#email_icon
           #box[#link("mailto:" + author.email)[#author.email]]
           #separator
-          /*#git_icon
-          #box[#link("https://github.com/" + author.github)[#author.github]]
+          //#git_icon
+          #box[#link("https://github.com/" + author.github)[GitHub: #author.github]]
           #separator
-          #linkedin_icon
+          /*#linkedin_icon
           box[
             #link("https://www.linkedin.com/in/" + author.linkedin)[#author.linkedin]
           ]*/

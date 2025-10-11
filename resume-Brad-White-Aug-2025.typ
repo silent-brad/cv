@@ -8,12 +8,12 @@
       lastname: "White",
       email: "bradscottwhite@gmail.com",
       phone: "(+1) 804-516-5072",
-      //github: "silent-brad",
+      github: "silent-brad",
       //linkedin: "bwht",
       portfolio: "dev.knightoffaith.systems",
       positions: (
         "Full Stack",
-        "Software Engineer",
+        "Programmer",
       ),
   ),
   date: today.display("[month repr:long] [day], [year]")
@@ -22,7 +22,7 @@
 #resume_section("Summary")
 
 #summary_item(
-  [_Full-stack Software Engineer with 2 and 1/2 years of professional software development experience and over a decade of experience in web app development. Seeking a junior to mid level software engineering role near *Richmond, VA* or remote._]
+  [_Full-stack Software Engineer with 2 and 1/2 years of professional software development experience and over a decade of experience in web app development. I am passionate about learning new things to quench my insatiable thirst for learning. Seeking a junior to mid level software engineering role near *Richmond, VA* or remote._]
 )
 
 #resume_section("Hard Skills")
@@ -102,12 +102,23 @@
 #resume_section("Personal Projects")
 
 #personal_project_item_header(
+  "Epos Programming Language",
+  "",
+  "github.com/silent-brad/epos-lang",
+  "Oct. 2025",
+  [
+    - Implemented a parser, lexer, type-checker and code-generator for a high-level functional statically-typed programming language that compiles to LLVM IR.
+    - #strong[Technologies:] Golang, Nix, LLVM
+  ]
+)
+
+#personal_project_item_header(
   "A Book Sharing App",
   "https://bookshelves.knightoffaith.systems",
   "github.com/silent-brad/bookshelves",
   "Sep. 2025",
   [
-    - Made backend, frontend, reverse proxy, UI, devops infra.
+    - Developed, designed and deployed frontend UI, backend rest API, reverse proxy, devops infrastructure, and database for a book sharing app.
     - #strong[Technologies:] TypeScript, Java, Angular, Spring Boot, Tailwind CSS, Caddy, Docker, Nix
   ]
 )
@@ -118,8 +129,7 @@
   "github.com/silent-brad/bt",
   "Aug. 2025",
   [
-    - Wrote Bencoder, ..
-    - ..
+    - Wrote Bencoder, ...
     - #strong[Technologies:] Golang, Nix
   ]
 )
