@@ -33,9 +33,9 @@
     "JavaScript/TypeScript",
     "HTML5",
     "CSS3",
-    "SQL",
     "Java",
     "Golang",
+    "SQL",
     "Ruby",
     "Shell/Bash",
     "Nix",
@@ -77,7 +77,7 @@
 
 #resume_item[
   - Designed, developed, and maintained 4 mission-critical Army training applications (#strong[#link("https://public.tag.army.mil/catalog")[Central Army Registry (CAR)]], #strong[#link("https://public.tag.army.mil/")[TRADOC Application Gateway (TAG)]], #strong[#link("https://rdl.train.army.mil/mt2")[My Training Tab (MT2)]], and #strong[#link("https://webapp.tdc.army.mil/tdc-webapp")[Training Development Capability (TDC)]]) serving over 200,000 monthly users, enhancing training accessibility and efficiency.
-  - Refactored and optimized codebases across 3 front-end frameworks (TypeScript, Angular, TailwindCSS, Angular Material UI) and back-end systems (Java, JRuby, Ruby on Rails, Microsoft SQL Server).//, resolving 30+ critical tickets and boosting application stability.
+  - Refactored and optimized codebases across 3 front-ends (TypeScript, Angular, TailwindCSS, Angular Material UI) and back-end systems (Java, JRuby, Ruby on Rails, Microsoft SQL Server).//, resolving 30+ critical tickets and boosting application stability.
   - Debugged and enhanced Java and Spring back-end systems, improving performance and reliability for high-traffic applications.
   - Automated developer workflows using Bash and Batch scripts, streamlining processes and reducing setup time.
   - Authored and optimized PL/SQL and T-SQL queries and stored procedures, improving database performance and reporting capabilities.
@@ -87,7 +87,7 @@
   - #strong[Technologies:] TypeScript, Angular, Tailwind CSS, Java, Spring, JRuby, Ruby on Rails, Microsoft SQL Server, Bash, Tomcat, GraphQL, Azure Cloud
 ]
 
-/*#work_experience_item_header(
+#work_experience_item_header(
   "Amazon, RIC9",
   "Ashland, VA",
   "Fulfillment Associate",
@@ -96,44 +96,44 @@
 
 #resume_item[
   - Provided support for team members who process returns, with a focus on teamwork excellence
-  - Drove forklift in warehouse to unload trucks, move boxes from conveyor belts, scan and take totes from belts and wrap for shipment
-]*/
+//  - Drove forklift in warehouse to unload trucks, move boxes from conveyor belts, scan and take totes from belts and wrap for shipment
+]
 
 #resume_section("Personal Projects")
 
 #personal_project_item_header(
   "Epos Programming Language",
   //"",
-  "github.com/silent-brad/epos-lang",
+  ("github.com/epos-lang/epos", "epos-lang.org"),
   "Oct. 2025",
   [
-    - Implemented a parser, lexer, type-checker and code-generator for a high-level functional statically-typed programming language that compiles to LLVM IR.
+    - Implemented a lexer, parser, type-checker, and code-generator for a functional statically-typed programming language that compiles to LLVM IR.
+    - Created documentation site with Tailwind CSS, Python, Jinja templating, Typst, and Nix
     - #strong[Technologies:] Golang, Nix, LLVM
   ]
 )
 
 #personal_project_item_header(
-  "A Book Sharing App",
+  "Book Sharing App",
   //"https://bookshelves.knightoffaith.systems",
-  "github.com/silent-brad/bookshelves",
+  ("github.com/silent-brad/bookshelves",),
   "Sep. 2025",
   [
-    //- Developed, designed and deployed frontend UI, backend rest API, reverse proxy, devops infrastructure, and database for a book sharing app.
-    - Developed, designed and deployed frontend, backend API, reverse proxy, devops infrastructure, and database for a book sharing app.
-    - #strong[Technologies:] TypeScript, Java, Angular, Spring Boot, Tailwind CSS, Caddy, Docker, Nix
+    //- Developed, designed and deployed frontend, backend API, reverse proxy, devops infrastructure, and database for a book sharing app.
+    - Developed and designed frontend, backend API, reverse proxy, devops infrastructure, and database for a book sharing app.
+    - #strong[Technologies:] TypeScript, Java, Angular, Spring Boot, Tailwind CSS, SQLite, Caddy, Nix
   ]
 )
 
-#personal_project_item_header(
-  "Bittorrent Client Implementation in Go",
-  //"",
-  "github.com/silent-brad/bt",
-  "Aug. 2025",
+/*#personal_project_item_header(
+  "Bittorrent Client Implementation",
+  ("github.com/silent-brad/bt-in-nim",),
+  "Oct. 2025",
   [
     - Wrote Bencoder, ...
-    - #strong[Technologies:] Golang, Nix
+    - #strong[Technologies:] Nim, Nix
   ]
-)
+)*/
 
 
 #pad(top: 15pt, resume_section("Certifications"))

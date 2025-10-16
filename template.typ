@@ -241,10 +241,9 @@
 
 #let personal_project_item_header(
   name,
-  //site,
-  git,
+  links,
   start_time,
-  content
+  content,
 ) = {
   set block(above: 0.7em, below: 0.7em)
   set pad(top: 5pt)
@@ -254,7 +253,11 @@
   pad[
     #justify_align[
       #resume_organization[#name]
-      #h(0.3cm) (#link("https://" + git)[#git])
+      #if links.len() == 2 {
+        [#h(0.3cm) (#link("https://" + links.at(0))[#links.at(0)] — #link("https://" + links.at(1))[#links.at(1)])]
+      } else {
+        [#h(0.3cm) (#link("https://" + links.first())[#links.first()])]
+      }
     ][
       #resume_location[
         /*#box[
