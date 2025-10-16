@@ -77,7 +77,7 @@
 
 #resume_item[
   - Designed, developed, and maintained 4 mission-critical Army training applications (#strong[#link("https://public.tag.army.mil/catalog")[Central Army Registry (CAR)]], #strong[#link("https://public.tag.army.mil/")[TRADOC Application Gateway (TAG)]], #strong[#link("https://rdl.train.army.mil/mt2")[My Training Tab (MT2)]], and #strong[#link("https://webapp.tdc.army.mil/tdc-webapp")[Training Development Capability (TDC)]]) serving over 200,000 monthly users, enhancing training accessibility and efficiency.
-  - Refactored and optimized codebases across 3 front-ends (TypeScript, Angular, TailwindCSS, Angular Material UI) and back-end systems (Java, JRuby, Ruby on Rails, Microsoft SQL Server).//, resolving 30+ critical tickets and boosting application stability.
+  - Refactored and optimized codebases across 3 front-end sites (TypeScript, Angular, TailwindCSS, Angular Material UI) and back-end systems (Java, JRuby, Ruby on Rails, Microsoft SQL Server).//, resolving 30+ critical tickets and boosting application stability.
   - Debugged and enhanced Java and Spring back-end systems, improving performance and reliability for high-traffic applications.
   - Automated developer workflows using Bash and Batch scripts, streamlining processes and reducing setup time.
   - Authored and optimized PL/SQL and T-SQL queries and stored procedures, improving database performance and reporting capabilities.
