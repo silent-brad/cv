@@ -96,7 +96,7 @@
 
 #resume_item[
   - Provided support for team members who process returns, with a focus on teamwork excellence
-//  - Drove forklift in warehouse to unload trucks, move boxes from conveyor belts, scan and take totes from belts and wrap for shipment
+  - Drove forklift in warehouse to unload trucks, move boxes from conveyor belts, scan and take totes from belts and wrap for shipment
 ]
 
 #resume_section("Personal Projects")
@@ -107,7 +107,7 @@
   ("github.com/epos-lang/epos", "epos-lang.org"),
   "Oct. 2025",
   [
-    - Implemented a parser,lexer, type-checker, and code-generator for a functional statically-typed programming language that compiles to LLVM IR.
+    - Implemented a parser, lexer, type-checker, and code-generator for a functional statically-typed programming language that compiles to LLVM IR.
     - Created documentation site with Tailwind CSS, Python, Jinja templating, Typst, and Nix
     - #strong[Technologies:] Golang, Nix, LLVM
   ]
@@ -125,7 +125,7 @@
   ]
 )
 
-/*#personal_project_item_header(
+#personal_project_item_header(
   "Bittorrent Client Implementation",
   ("github.com/silent-brad/bt-in-nim",),
   "Oct. 2025",
@@ -133,7 +133,7 @@
     - Wrote Bencoder, ...
     - #strong[Technologies:] Nim, Nix
   ]
-)*/
+)
 
 
 #pad(top: 15pt, resume_section("Certifications"))
