@@ -153,6 +153,6 @@
 #pad(top: 15pt, resume_section("Clearance"))
 
 #certification_item(
-  "Active Confidential Security Clearance",
+  "Active Public Trust Security Clearance",
   "Til Aug. 2027"
 )
