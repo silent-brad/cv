@@ -4,17 +4,14 @@
 
 #show: resume.with(
   author: (
-      firstname: "Brad", 
-      lastname: "White",
-      email: "bradscottwhite@gmail.com",
-      phone: "(+1) 804-516-5072",
-      github: "silent-brad",
-      //linkedin: "bwht",
-      portfolio: "dev.knightoffaith.systems",
-      positions: (
-        "Full Stack",
-        "Programmer",
-      ),
+    firstname: "Brad",
+    lastname: "White",
+    email: "bradscottwhite@gmail.com",
+    phone: "(+1) 804-516-5072",
+    github: "silent-brad",
+    linkedin: "bwht",
+    portfolio: "dev.knightoffaith.systems",
+    position: "Full Stack Programmer",
   ),
   date: today.display("[month repr:long] [day], [year]")
 )
@@ -31,10 +28,10 @@
   [Programming Languages],
   (
     "JavaScript/TypeScript",
+    "Golang",
     "HTML5",
     "CSS3",
     "Java",
-    "Golang",
     "SQL",
     "Ruby",
     "Shell/Bash",
@@ -66,7 +63,7 @@
   "2025"
 )*/
 
-#pad(top: 15pt, resume_section("Professional Experience"))
+#pad(top: 8pt, resume_section("Professional Experience"))
 
 #work_experience_item_header(
   "Akytech Consulting, ATIS (Army Training Information System)",
@@ -76,7 +73,7 @@
 )
 
 #resume_item[
-  - Designed, developed, and maintained 4 mission-critical Army training applications (#strong[#link("https://public.tag.army.mil/catalog")[Central Army Registry (CAR)]], #strong[#link("https://public.tag.army.mil/")[TRADOC Application Gateway (TAG)]], #strong[#link("https://rdl.train.army.mil/mt2")[My Training Tab (MT2)]], and #strong[#link("https://webapp.tdc.army.mil/tdc-webapp")[Training Development Capability (TDC)]]) serving over 200,000 monthly users, enhancing training accessibility and efficiency.
+  - Designed, developed, and maintained 4 mission-critical Army training applications (#underline[#link("https://public.tag.army.mil/catalog")[Central Army Registry (CAR)]], #underline[#link("https://public.tag.army.mil/")[TRADOC Application Gateway (TAG)]], #underline[#link("https://rdl.train.army.mil/mt2")[My Training Tab (MT2)]], and #underline[#link("https://webapp.tdc.army.mil/tdc-webapp")[Training Development Capability (TDC)]]) serving over 200,000 monthly users, enhancing training accessibility and efficiency.
   - Refactored and optimized codebases across 3 front-end sites (TypeScript, Angular, TailwindCSS, Angular Material UI) and back-end systems (Java, JRuby, Ruby on Rails, Microsoft SQL Server).//, resolving 30+ critical tickets and boosting application stability.
   - Debugged and enhanced Java and Spring back-end systems, improving performance and reliability for high-traffic applications.
   - Automated developer workflows using Bash and Batch scripts, streamlining processes and reducing setup time.
@@ -87,7 +84,7 @@
   - #strong[Technologies:] TypeScript, Angular, Tailwind CSS, Java, Spring, JRuby, Ruby on Rails, Microsoft SQL Server, Bash, Tomcat, GraphQL, Azure Cloud
 ]
 
-#work_experience_item_header(
+/*#work_experience_item_header(
   "Amazon, RIC9",
   "Ashland, VA",
   "Fulfillment Associate",
@@ -97,7 +94,7 @@
 #resume_item[
   - Provided support for team members who process returns, with a focus on teamwork excellence
 //  - Drove forklift in warehouse to unload trucks, move boxes from conveyor belts, scan and take totes from belts and wrap for shipment
-]
+]*/
 
 #resume_section("Personal Projects")
 
@@ -107,7 +104,7 @@
   ("github.com/epos-lang/epos", "epos-lang.org"),
   "Oct. 2025",
   [
-    - Implemented a parser,lexer, type-checker, and code-generator for a functional statically-typed programming language that compiles to LLVM IR.
+    - Implemented a lexer, parser, type-checker, and code-generator for a functional statically-typed programming language that compiles to LLVM IR.
     - Created documentation site with Tailwind CSS, Python, Jinja templating, Typst, and Nix
     - #strong[Technologies:] Golang, Nix, LLVM
   ]
@@ -122,6 +119,16 @@
     //- Developed, designed and deployed frontend, backend API, reverse proxy, devops infrastructure, and database for a book sharing app.
     - Developed and designed frontend, backend API, reverse proxy, devops infrastructure, and database for a book sharing app.
     - #strong[Technologies:] TypeScript, Java, Angular, Spring Boot, Tailwind CSS, SQLite, Caddy, Nix
+  ]
+)
+
+#personal_project_item_header(
+  "Lambda Calculus Interpreter",
+  ("github.com/silent-brad/lambda-calc",),
+  "Oct. 2025",
+  [
+    - Implemented a lambda calculus interpreter in Haskell to learn about functional programming.
+    - #strong[Technologies:] Haskell, Lambda Calculus, Nix
   ]
 )
 

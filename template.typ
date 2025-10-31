@@ -43,7 +43,7 @@
   )
   
   set text(
-//    font: ("Apple Garamond"),
+    font: ("Athelas"),
     lang: "en",
     size: 11pt,
     fill: color_darknight,
@@ -63,75 +63,52 @@
     numbering: none,
     outlined: false,
   )
-  
-  let name = {
-    align(center)[
-      #pad(bottom: 5pt)[
-        #block[
-          #set text(size: 28pt, style: "normal", fill: accent)
-          #text[#author.firstname]
-          #text[#author.lastname]
-        ]
-      ]
-    ]
-  }
 
-  let positions = {
-    set text(
-      size: 10pt,
-      weight: "regular",
-      ligatures: false,
-    )
-    align(center)[
-      #smallcaps[
-        #author.positions.join(
-          text[#" "#sym.dot.c#" "]
-        )
-      ]
-    ]
+  let name = {
+    align(left, pad(top: 20pt)[
+      #set text(size: 22pt, style: "normal", fill: accent, font: "EB Garamond")
+      #(author.firstname + " " + author.lastname)
+      #set text(
+        size: 10pt,
+        weight: "light",
+        ligatures: false,
+        fill: color_darkgray,
+        style: "italic",
+      )
+      #smallcaps[#author.position]
+    ])
   }
 
   let contacts = {
-    set box(height: 11pt)
-    set text(size: 11pt)
+    set box(height: 9pt)
+    set text(size: 9pt)
 
-    //let linkedin_icon = box(image("assets/icons/linkedin.svg"))
-    //let portfolio_icon = box(image("assets/icons/link.svg"))
-    //let git_icon = box(image("assets/icons/square-github.svg"))
-    //let git_icon = box(image("assets/icons/devicons/git.svg"))
-    //let email_icon = box(image("assets/icons/square-envelope-solid.svg"))
-    //let phone_icon = box(image("assets/icons/square-phone-solid.svg"))
-
-    //let separator = [ #strong[●] ]
     let separator = box(width: 5pt)
     
-    align(center)[
-      #block[
-        #align(horizon)[
-          //#phone_icon
-          #box[#text(author.phone)]
-          #separator
-          //#email_icon
-          #box[#link("mailto:" + author.email)[#author.email]]
-          #separator
-          //#git_icon
-          #box[#link("https://github.com/" + author.github)[github: #author.github]]
-          #separator
-          /*#linkedin_icon
-          box[
-            #link("https://www.linkedin.com/in/" + author.linkedin)[#author.linkedin]
-          ]*/
-          //#portfolio_icon
-          #box[
-            #link("https://" + author.portfolio)[#author.portfolio]
-          ]
+    align(left, block[
+      #align(horizon)[
+        //#phone_icon
+        #box[#text(author.phone)]
+        #separator
+        //#email_icon
+        #box[#link("mailto:" + author.email)[#author.email]]
+        #separator
+        //#git_icon
+        #box[#link("https://github.com/" + author.github)[GitHub: #underline[#author.github]]]
+        #separator
+        #box[
+          #link("https://www.linkedin.com/in/" + author.linkedin)[LinkedIn: #underline[#author.linkedin]]
+        ]
+        #separator
+        //#portfolio_icon
+        #box[
+          #link("https://" + author.portfolio)[#underline[#author.portfolio]]
         ]
       ]
-    ] 
+    ])
   }
 
   name
-  positions
   contacts
   body
 }
@@ -139,9 +116,10 @@
 // general style
 #let resume_section(title) = {
   set text(
-    size: 16pt,
+    size: 14pt,
     weight: "thin",
     fill: accent,
+    font: "EB Garamond"
   )
   align(left)[
     #smallcaps[#title]
@@ -182,7 +160,7 @@
 }
 
 #let resume_category(body) = {
-  set text(size: 11pt, weight: "bold")
+  set text(size: 10pt, weight: "bold")
   body
 }
 
@@ -254,9 +232,9 @@
     #justify_align[
       #resume_organization[#name]
       #if links.len() == 2 {
-        [#h(0.3cm) (#link("https://" + links.at(0))[#links.at(0)] — #link("https://" + links.at(1))[#links.at(1)])]
+        [#h(0.3cm) (#underline[#link("https://" + links.at(0))[#links.at(0)]] — #underline[#link("https://" + links.at(1))[#links.at(1)]])]
       } else {
-        [#h(0.3cm) (#link("https://" + links.first())[#links.first()])]
+        [#h(0.3cm) (#underline[#link("https://" + links.first())[#links.first()])]]
       }
     ][
       #resume_location[
@@ -281,18 +259,18 @@
 }
 
 #let skill_item(category, items) = {
-  set block(below: 0.65em)
+  set block(below: 0.6em)
   set pad(top: 5pt)
   
   pad[
     #grid(
-      columns: (25fr, 75fr),
+      columns: (20fr, 80fr),
       gutter: 10pt,
       align(right)[
         #resume_category[#category]
       ],
       align(left)[
-        #set text(size: 12pt, style: "normal", weight: "light")
+        #set text(size: 10pt, style: "normal", weight: "light")
         #items.map(icon => icon).join(", ")
       ],
     )
